@@ -4,7 +4,8 @@ __author__ = "730772172"
 
 
 def input_word() -> str:
-    """This function prompts the user for a 5 letter word and will give them an error if the word isnt 5 letters"""
+    """This function prompts the user for a
+    5 letter word and will give them an error if the word isnt 5 letters"""
     word: str = input("Enter a 5-character word: ")  # input from the user
     if len(word) != 5:  # if the word is not 5 characters will return error
         print("Error: Word must contain 5 characters.")
@@ -22,7 +23,8 @@ def input_letter() -> str:
 
 
 def contains_char(word: str, letter: str) -> None:
-    """this function searches the word to see how many times the letter the user used appears"""
+    """this function searches the word to see how many
+    times the letter the user used appears"""
     count: int = 0
     print("Searching for " + letter + " in " + word)
     if letter == word[0]:  # if statements determine if the letter is at each index
@@ -42,7 +44,8 @@ def contains_char(word: str, letter: str) -> None:
         count += 1
 
     if count == 0:
-        # this if statement checks the appearances of the letter in the word and prints it to the screen
+        # this if statement checks the
+        # appearances of the letter in the word and prints it to the screen
         print("No instances of " + letter + " found in " + word)
     elif count == 1:
         print("1 instance of " + letter + " found in " + word)
